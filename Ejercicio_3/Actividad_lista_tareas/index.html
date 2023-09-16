@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mis Tareas Diarias</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Mis Tareas Diarias</h1>
+    <label for="nuevaTarea">¿Cuál es tu próxima tarea?</label>
+    <input type="text" id="nuevaTarea" placeholder="Escribe tu tarea aquí">
+    <button onclick="agregarTarea()">Agregar</button>
+
+    <ul id="listaTareas"></ul>
+    <script src="script.js"></script>
+</body>
+
+<div class="filter-buttons">
+    <button id="mostrarCompletadas" class="selected" onclick="mostrarCompletadas()">Mostrar Completadas</button>
+    <button id="mostrarPendientes" onclick="mostrarPendientes()">Mostrar Pendientes</button>
+</div>
+
+</html>
